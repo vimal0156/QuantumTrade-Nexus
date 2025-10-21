@@ -1,0 +1,148 @@
+# ============================================================================
+# QuantumTrade Nexus - Requirements
+# Advanced Trading Intelligence Platform
+# Python 3.8+ Required
+# ============================================================================
+
+# ============================================================================
+# Core Web Framework
+# ============================================================================
+streamlit>=1.28.0              # Web application framework for interactive UI
+
+# ============================================================================
+# Data Processing & Analysis
+# ============================================================================
+pandas>=2.0.0                  # Data manipulation and analysis
+numpy>=1.24.0                  # Numerical computing and array operations
+scipy>=1.11.0                  # Scientific computing and optimization
+
+# ============================================================================
+# Market Data & Financial APIs
+# ============================================================================
+yfinance>=0.2.28               # Yahoo Finance market data fetching
+requests>=2.31.0               # HTTP library for API requests
+
+# ============================================================================
+# Visualization & Charting
+# ============================================================================
+matplotlib>=3.7.0              # Core plotting library
+mplfinance>=0.12.9b7           # Financial charting (candlestick, OHLC)
+seaborn>=0.12.0                # Statistical data visualization
+plotly>=5.17.0                 # Interactive charts and dashboards
+
+# ============================================================================
+# Statistical Analysis & Machine Learning
+# ============================================================================
+statsmodels>=0.14.0            # Statistical models (Markov, Johansen, ARIMA)
+scikit-learn>=1.3.0            # Machine learning algorithms
+hmmlearn>=0.3.0                # Hidden Markov Models for regime detection
+
+# ============================================================================
+# Technical Indicators & Trading Tools
+# ============================================================================
+ta-lib>=0.4.28                 # Technical Analysis Library (optional, requires C dependencies)
+pandas-ta>=0.3.14b             # Pandas Technical Analysis indicators
+
+# ============================================================================
+# Trading APIs & Brokers
+# ============================================================================
+alpaca-py>=0.20.0              # Alpaca trading API for paper/live trading
+alpaca-trade-api>=3.0.2        # Legacy Alpaca API support
+
+# ============================================================================
+# Database & Data Storage
+# ============================================================================
+asyncpg>=0.29.0                # PostgreSQL async driver for Markov model persistence
+sqlalchemy>=2.0.0              # SQL toolkit and ORM
+psycopg2-binary>=2.9.9         # PostgreSQL adapter
+
+# ============================================================================
+# Configuration & Environment
+# ============================================================================
+pyyaml>=6.0                    # YAML configuration file parsing
+python-dotenv>=1.0.0           # Environment variable management from .env files
+
+# ============================================================================
+# Date & Time Handling
+# ============================================================================
+pytz>=2023.3                   # Timezone calculations and conversions
+python-dateutil>=2.8.2         # Extensions to datetime module
+
+# ============================================================================
+# Utilities & Helpers
+# ============================================================================
+tqdm>=4.66.0                   # Progress bars for long-running operations
+colorama>=0.4.6                # Cross-platform colored terminal text
+tabulate>=0.9.0                # Pretty-print tabular data
+
+# ============================================================================
+# Data Validation & Type Checking
+# ============================================================================
+pydantic>=2.0.0                # Data validation using Python type annotations
+
+# ============================================================================
+# Logging & Monitoring
+# ============================================================================
+loguru>=0.7.0                  # Simplified logging with better formatting
+
+# ============================================================================
+# Testing & Quality Assurance (Development)
+# ============================================================================
+pytest>=7.4.0                  # Testing framework
+pytest-cov>=4.1.0              # Test coverage plugin
+pytest-asyncio>=0.21.0         # Async test support
+black>=23.7.0                  # Code formatter
+flake8>=6.1.0                  # Linting tool
+mypy>=1.5.0                    # Static type checker
+isort>=5.12.0                  # Import statement organizer
+
+# ============================================================================
+# Performance & Optimization
+# ============================================================================
+numba>=0.58.0                  # JIT compiler for numerical functions
+cython>=3.0.0                  # C-extensions for Python
+
+# ============================================================================
+# API Rate Limiting & Caching
+# ============================================================================
+ratelimit>=2.2.1               # API rate limiting decorator
+cachetools>=5.3.0              # Extensible memoizing collections
+
+# ============================================================================
+# Jupyter Notebook Support (Optional)
+# ============================================================================
+jupyter>=1.0.0                 # Jupyter notebook interface
+ipykernel>=6.25.0              # IPython kernel for Jupyter
+ipywidgets>=8.1.0              # Interactive widgets for notebooks
+
+# ============================================================================
+# Additional Financial Data Sources (Optional)
+# ============================================================================
+# alpha-vantage>=2.3.1         # Alpha Vantage API wrapper
+# polygon-api-client>=1.12.0   # Polygon.io API client
+# quandl>=3.7.0                # Quandl financial data API
+
+# ============================================================================
+# Advanced Analytics (Optional)
+# ============================================================================
+# tensorflow>=2.13.0           # Deep learning framework
+# keras>=2.13.0                # High-level neural networks API
+# pytorch>=2.0.0               # PyTorch deep learning framework
+
+# ============================================================================
+# Notes
+# ============================================================================
+# - ta-lib requires C dependencies. Install separately:
+#   Windows: Download wheel from https://www.lfd.uci.edu/~gohlke/pythonlibs/
+#   Linux/Mac: Install via package manager first (brew install ta-lib)
+#
+# - For production deployment, pin exact versions:
+#   pip freeze > requirements-lock.txt
+#
+# - For minimal installation (core features only):
+#   pip install streamlit pandas numpy yfinance matplotlib mplfinance
+#
+# - Update all packages:
+#   pip install --upgrade -r requirements.txt
+#
+# ============================================================================
